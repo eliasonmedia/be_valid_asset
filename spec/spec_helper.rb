@@ -12,6 +12,7 @@ require 'be_valid_asset'
 
 RSpec.configure do |config|
   config.include BeValidAsset
+  config.expect_with :rspec
   
   BeValidAsset::Configuration.cache_path = File.join(File.dirname(__FILE__), 'tmp')
 end
